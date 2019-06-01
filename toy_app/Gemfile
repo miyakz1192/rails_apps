@@ -27,3 +27,7 @@ end
 
 # for windows environment
 gem 'tzinfo-data'
+
+gem 'bootsnap', require: false
+gem 'mysql2'
+
