@@ -16,7 +16,10 @@ default: &default
   pool: 5
   username: toy_app
   password: a
-  socket: /var/run/mysqld/mysqld.sock
+  host: 192.168.122.188
+  port: 3306
+
+  #  socket: /var/run/mysqld/mysqld.sock
 #socket is identified by mysql_config --socket
 
 development:
