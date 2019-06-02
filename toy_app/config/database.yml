@@ -14,9 +14,9 @@ default: &default
   encoding: utf8
   database: toy_app
   pool: 5
-  username: toy_app
-  password: a
-  host: 192.168.122.188
+  username: <%= ENV.fetch("TOY_APP_DB_USERNAME") { "root" } %>
+  password: <%= ENV.fetch("TOY_APP_DB_PASSWORD") { "root" } %>
+  host:  <%= ENV.fetch("TOY_APP_DB_HOST") { "127.0.0.1" } %> 
   port: 3306
 
   #  socket: /var/run/mysqld/mysqld.sock
